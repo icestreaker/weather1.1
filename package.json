@@ -41,5 +41,5 @@
     "react-sparklines": "^1.6.0",
     "redux": "^3.0.4",
     "sparklines": "^1.0.0"
-  },
+  }
 }
