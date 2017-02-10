@@ -8,9 +8,8 @@
     "url": "git+ssh://git@github.com/icestreaker/weather1.1.git"
   },
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
   "author": "James Warren Basham",
   "license": "ISC",
@@ -21,6 +20,7 @@
     "babel-preset-react": "^6.1.18",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
+    "html-webpack-plugin": "^2.28.0",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
